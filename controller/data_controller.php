@@ -9,7 +9,6 @@
 
 namespace david63\registrationage\controller;
 
-use Symfony\Component\DependencyInjection\ContainerInterface;
 use phpbb\config\config;
 use phpbb\db\driver\driver_interface;
 use phpbb\request\request;
@@ -170,7 +169,7 @@ class data_controller implements data_interface
 				'REG_BDAY'	=> $row['user_registration_birthdate'],
 				'STATUS'	=> '<img src="' . htmlspecialchars($this->ext_root_path) . 'images/' . $status . '.png" align="middle" title="' . $title . '" />',
 				'USERNAME'	=> get_username_string('full', $row['user_id'], $row['username'], $row['user_colour']),
-		   	));
+			));
 		}
 
 		$this->db->sql_freeresult($result);
@@ -232,7 +231,7 @@ class data_controller implements data_interface
 			'S_SORT_KEY'				=> $s_sort_key,
 
 			'TOTAL_USERS'				=> $this->language->lang('TOTAL_USERS', (int) $user_count),
-			
+
 			'U_ACTION'					=> $action . "&ampfc=$fc",
 		));
 	}

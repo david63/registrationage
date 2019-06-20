@@ -20,7 +20,6 @@ use phpbb\template\template;
 use phpbb\request\request;
 use phpbb\auth\auth;
 use phpbb\log\log;
-use david63\registrationage\ext;
 
 /**
 * Event listener
