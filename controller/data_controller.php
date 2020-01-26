@@ -168,7 +168,7 @@ class data_controller implements data_interface
 				'BIRTHDAY'	=> $row['user_birthday'],
 				'REG_AGE'	=> $reg_age,
 				'REG_BDAY'	=> $row['user_registration_birthdate'],
-				'STATUS'	=> '<img src="' . htmlspecialchars($this->ext_root_path) . 'images/' . $status . '.png" align="middle" title="' . $title . '" />',
+				'STATUS'	=> '<img src="' . $this->ext_root_path . 'images/' . $status . '.png" align="middle" title="' . $title . '" />',
 				'USERNAME'	=> get_username_string('full', $row['user_id'], $row['username'], $row['user_colour']),
 			));
 		}
