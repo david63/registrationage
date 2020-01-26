@@ -37,9 +37,6 @@ if (empty($lang) || !is_array($lang))
 //
 
 $lang = array_merge($lang, array(
-	'NEW_VERSION'							=> 'New Version',
-	'NEW_VERSION_EXPLAIN'					=> 'There is a newer version of this extension available.',
-
 	'REGISTRATION_AGE_ADMIN'				=> 'Show age on mini profile to Admin/Mods',
 	'REGISTRATION_AGE_ADMIN_EXPLAIN'		=> 'Only show the user’s age on the profile of viewtopic to Administrators and Moderators.',
 	'REGISTRATION_AGE_BAN_LENGTH'			=> 'Length of ban',
@@ -59,8 +56,6 @@ $lang = array_merge($lang, array(
 	'REGISTRATION_AGE_STORE'				=> 'Store the registration age',
 	'REGISTRATION_AGE_STORE_EXPLAIN'		=> 'Save the registration age in the database.<br><strong>Note: Be aware that saving this data may not be legal in your country.</strong>',
 
-	'VERSION'								=> 'Version',
-
 	'BAN_END_TEXT' => array(
 		'0' 	=> 'Permanent',
 		'30' 	=> '30 minute',
@@ -71,14 +66,4 @@ $lang = array_merge($lang, array(
 		'20160'	=> '2 weeks',
 		'40320'	=> '1 month',
 	),
-));
-
-// Donate
-$lang = array_merge($lang, array(
-	'DONATE'					=> 'Donate',
-	'DONATE_EXTENSIONS'			=> 'Donate to my extensions',
-	'DONATE_EXTENSIONS_EXPLAIN'	=> 'This extension, as with all of my extensions, is totally free of charge. If you have benefited from using it then please consider making a donation by clicking the PayPal donation button opposite - I would appreciate it. I promise that there will be no spam nor requests for further donations, although they would always be welcome.',
-
-	'PAYPAL_BUTTON'				=> 'Donate with PayPal button',
-	'PAYPAL_TITLE'				=> 'PayPal - The safer, easier way to pay online!',
 ));

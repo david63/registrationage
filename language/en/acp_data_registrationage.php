@@ -65,9 +65,6 @@ $lang = array_merge($lang, array(
 
 	'TOTAL_USERS'				=> 'User count : <strong>%1$s</strong>',
 
-	'VERSION'					=> 'Version',
-
-
 	// Translators - set these to whatever is most appropriate in your language
 	// These are used to populate the filter keys
 	'START_CHARACTER'		=> 'A',
