@@ -17,7 +17,7 @@ if (!defined('IN_PHPBB'))
 
 if (empty($lang) || !is_array($lang))
 {
-	$lang = array();
+	$lang = [];
 }
 
 // DEVELOPERS PLEASE NOTE
@@ -37,6 +37,7 @@ if (empty($lang) || !is_array($lang))
 //
 
 $lang = array_merge($lang, array(
-	'REGISTERED_BIRTHDATE'	=> 'Registered birthdate',
 	'BIRTHDATE_NOT_ENTERED'	=> 'Birthdate not entered at registration',
+
+	'REGISTERED_BIRTHDATE'	=> 'Registered birthdate',
 ));

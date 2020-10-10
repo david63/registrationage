@@ -37,12 +37,10 @@ if (empty($lang) || !is_array($lang))
 //
 
 $lang = array_merge($lang, array(
-	'BAN_REASON'				=> 'Under age',
+	'APPROX_FLAG'				=> ' **',
+	'APPROX_FLAG_EXPLAIN'		=> 'Dates marked ** are approximate.',
 
-	'ENTER_BIRTHDATE' 			=> 'Enter your birthdate',
+	'INVALID_DATE'				=> 'Incomplete date',
 
-	'MINIMUM_AGE'				=> 'Minimum age to register on this board is %1$s',
-
-	'REGISTRATION_AGE_ERROR'	=> 'The age entered age is %1$s. The minimum age to register on this board is %2$s.',
-	'REGISTRATION_AGE_MISSING'	=> 'Invalid birthdate data entered.',
+	'NO_DATE_ENTERED'			=> 'No date entered',
 ));

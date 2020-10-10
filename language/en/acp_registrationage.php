@@ -17,7 +17,7 @@ if (!defined('IN_PHPBB'))
 
 if (empty($lang) || !is_array($lang))
 {
-	$lang = array();
+	$lang = [];
 }
 
 // DEVELOPERS PLEASE NOTE
@@ -37,6 +37,8 @@ if (empty($lang) || !is_array($lang))
 //
 
 $lang = array_merge($lang, array(
+	'DATABASE_FORMAT'						=> 'db',
+
 	'REGISTRATION_AGE_ADMIN'				=> 'Show age on mini profile to Admin/Mods',
 	'REGISTRATION_AGE_ADMIN_EXPLAIN'		=> 'Only show the user’s age on the profile of viewtopic to Administrators and Moderators.',
 	'REGISTRATION_AGE_BAN_LENGTH'			=> 'Length of ban',
@@ -53,8 +55,16 @@ $lang = array_merge($lang, array(
 	'REGISTRATION_AGE_LOG'					=> 'Log failed attempts',
 	'REGISTRATION_AGE_LOG_EXPLAIN'			=> 'Create a log entry for any attempted registrations that fail due to an incorrect age being entered.',
 	'REGISTRATION_AGE_OPTIONS'				=> 'Registration age options',
+	'REGISTRATION_AGE_SHOW'					=> 'Show registration age',
+	'REGISTRATION_AGE_SHOW_EXPLAIN'			=> 'Show the minimum age, at which a member can register on this board, on the registration page.',
 	'REGISTRATION_AGE_STORE'				=> 'Store the registration age',
 	'REGISTRATION_AGE_STORE_EXPLAIN'		=> 'Save the registration age in the database.<br><strong>Note: Be aware that saving this data may not be legal in your country.</strong>',
+	'REGISTRATION_DATE_FORMAT'				=> 'Date format',
+	'REGISTRATION_DATE_FORMAT_EXPLAIN'		=> 'Use the user’s date format or retain the format in the database.',
+	'REGISTRATION_VERBOSE'					=> 'Verbose messages',
+	'REGISTRATION_VERBOSE_EXPLAIN'			=> 'Show messages where data is missing/incorrect, or leave blank.',
+
+	'USER_FORMAT'							=> 'User',
 
 	'BAN_END_TEXT' => array(
 		'0' 	=> 'Permanent',
