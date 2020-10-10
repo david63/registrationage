@@ -232,30 +232,30 @@ class data_controller
 		$this->template->assign_vars([
 			'DOWNLOAD' => (array_key_exists('download', $version_data)) ? '<a class="download" href =' . $version_data['download'] . '>' . $this->language->lang('NEW_VERSION_LINK') . '</a>' : '',
 
-			'HEAD_TITLE' => $this->language->lang('REGISTRATION_AGE'),
-			'HEAD_DESCRIPTION' => $this->language->lang('REGISTRATION_DATA_EXPLAIN'),
+			'HEAD_TITLE' 		=> $this->language->lang('REGISTRATION_AGE'),
+			'HEAD_DESCRIPTION'	=> $this->language->lang('REGISTRATION_DATA_EXPLAIN'),
 
-			'NAMESPACE' => $this->functions->get_ext_namespace('twig'),
+			'NAMESPACE' 		=> $this->functions->get_ext_namespace('twig'),
 
-			'PHP_VALID' => $valid[0],
-			'PHPBB_VALID' => $valid[1],
+			'PHP_VALID' 		=> $valid[0],
+			'PHPBB_VALID' 		=> $valid[1],
 
-			'S_BACK' => $back,
-			'S_VERSION_CHECK' => (array_key_exists('current', $version_data)) ? $version_data['current'] : false,
+			'S_BACK' 			=> $back,
+			'S_VERSION_CHECK' 	=> (array_key_exists('current', $version_data)) ? $version_data['current'] : false,
 
-			'VERSION_NUMBER' => $this->functions->get_meta('version'),
+			'VERSION_NUMBER' 	=> $this->functions->get_meta('version'),
 		]);
 
 		$this->template->assign_vars([
-			'REGISTRATION_DATE_FORMAT' => $this->config['registration_date_format'],
+			'REGISTRATION_DATE_FORMAT'	=> $this->config['registration_date_format'],
 
-			'S_FILTER_CHAR'	=> $this->character_select($fc),
-			'S_SORT_DIR'	=> $s_sort_dir,
-			'S_SORT_KEY'	=> $s_sort_key,
+			'S_FILTER_CHAR'				=> $this->character_select($fc),
+			'S_SORT_DIR'				=> $s_sort_dir,
+			'S_SORT_KEY'				=> $s_sort_key,
 
-			'TOTAL_USERS' 	=> $this->language->lang('TOTAL_USERS', (int) $user_count),
+			'TOTAL_USERS' 				=> $this->language->lang('TOTAL_USERS', (int) $user_count),
 
-			'U_ACTION' 		=> $action . "&ampfc=$fc",
+			'U_ACTION' 					=> $action . "&ampfc=$fc",
 		]);
 	}
 

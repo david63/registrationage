@@ -131,40 +131,40 @@ class admin_controller
 		$valid = $this->functions->ext_requirements();
 
 		$this->template->assign_vars([
-			'DOWNLOAD' => (array_key_exists('download', $version_data)) ? '<a class="download" href =' . $version_data['download'] . '>' . $this->language->lang('NEW_VERSION_LINK') . '</a>' : '',
+			'DOWNLOAD' 			=> (array_key_exists('download', $version_data)) ? '<a class="download" href =' . $version_data['download'] . '>' . $this->language->lang('NEW_VERSION_LINK') . '</a>' : '',
 
-			'EXT_IMAGE_PATH' => $this->ext_images_path,
+			'EXT_IMAGE_PATH' 	=> $this->ext_images_path,
 
-			'HEAD_TITLE' => $this->language->lang('REGISTRATION_AGE'),
-			'HEAD_DESCRIPTION' => $this->language->lang('REGISTRATION_AGE_EXPLAIN'),
+			'HEAD_TITLE' 		=> $this->language->lang('REGISTRATION_AGE'),
+			'HEAD_DESCRIPTION'	=> $this->language->lang('REGISTRATION_AGE_EXPLAIN'),
 
-			'NAMESPACE' => $this->functions->get_ext_namespace('twig'),
+			'NAMESPACE' 		=> $this->functions->get_ext_namespace('twig'),
 
-			'PHP_VALID' => $valid[0],
-			'PHPBB_VALID' => $valid[1],
+			'PHP_VALID' 		=> $valid[0],
+			'PHPBB_VALID' 		=> $valid[1],
 
-			'S_BACK' => $back,
-			'S_VERSION_CHECK' => (array_key_exists('current', $version_data)) ? $version_data['current'] : false,
+			'S_BACK' 			=> $back,
+			'S_VERSION_CHECK' 	=> (array_key_exists('current', $version_data)) ? $version_data['current'] : false,
 
-			'VERSION_NUMBER' => $this->functions->get_meta('version'),
+			'VERSION_NUMBER' 	=> $this->functions->get_meta('version'),
 		]);
 
 		// Set output vars for display in the template
 		$this->template->assign_vars([
-			'REGISTRATION_AGE' => isset($this->config['registration_age']) ? $this->config['registration_age'] : '',
-			'REGISTRATION_AGE_ADMIN' => isset($this->config['registration_age_admin']) ? $this->config['registration_age_admin'] : '',
-			'REGISTRATION_AGE_BAN_LENGTH' => $ban_opts,
-			'REGISTRATION_AGE_BAN_REASON' => isset($this->config['registration_age_ban_reason']) ? $this->config['registration_age_ban_reason'] : '',
-			'REGISTRATION_AGE_COPY' => isset($this->config['registration_age_copy']) ? $this->config['registration_age_copy'] : '',
-			'REGISTRATION_AGE_DISPLAY' => isset($this->config['registration_age_display']) ? $this->config['registration_age_display'] : '',
-			'REGISTRATION_AGE_IP' => isset($this->config['registration_age_ip']) ? $this->config['registration_age_ip'] : '',
-			'REGISTRATION_AGE_LOG' => isset($this->config['registration_age_log']) ? $this->config['registration_age_log'] : '',
-			'REGISTRATION_AGE_SHOW' => isset($this->config['registration_age_show']) ? $this->config['registration_age_show'] : '',
-			'REGISTRATION_AGE_STORE' => isset($this->config['registration_age_store']) ? $this->config['registration_age_store'] : '',
-			'REGISTRATION_DATE_FORMAT' => isset($this->config['registration_date_format']) ? $this->config['registration_date_format'] : '',
-			'REGISTRATION_VERBOSE' => isset($this->config['registration_verbose']) ? $this->config['registration_verbose'] : '',
+			'REGISTRATION_AGE' 				=> isset($this->config['registration_age']) ? $this->config['registration_age'] : '',
+			'REGISTRATION_AGE_ADMIN' 		=> isset($this->config['registration_age_admin']) ? $this->config['registration_age_admin'] : '',
+			'REGISTRATION_AGE_BAN_LENGTH' 	=> $ban_opts,
+			'REGISTRATION_AGE_BAN_REASON'	=> isset($this->config['registration_age_ban_reason']) ? $this->config['registration_age_ban_reason'] : '',
+			'REGISTRATION_AGE_COPY' 		=> isset($this->config['registration_age_copy']) ? $this->config['registration_age_copy'] : '',
+			'REGISTRATION_AGE_DISPLAY' 		=> isset($this->config['registration_age_display']) ? $this->config['registration_age_display'] : '',
+			'REGISTRATION_AGE_IP' 			=> isset($this->config['registration_age_ip']) ? $this->config['registration_age_ip'] : '',
+			'REGISTRATION_AGE_LOG' 			=> isset($this->config['registration_age_log']) ? $this->config['registration_age_log'] : '',
+			'REGISTRATION_AGE_SHOW' 		=> isset($this->config['registration_age_show']) ? $this->config['registration_age_show'] : '',
+			'REGISTRATION_AGE_STORE' 		=> isset($this->config['registration_age_store']) ? $this->config['registration_age_store'] : '',
+			'REGISTRATION_DATE_FORMAT' 		=> isset($this->config['registration_date_format']) ? $this->config['registration_date_format'] : '',
+			'REGISTRATION_VERBOSE' 			=> isset($this->config['registration_verbose']) ? $this->config['registration_verbose'] : '',
 
-			'U_ACTION' => $this->u_action,
+			'U_ACTION' 						=> $this->u_action,
 		]);
 	}
 
